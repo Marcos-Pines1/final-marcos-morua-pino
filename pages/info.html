@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--------------- Meta Etiquetas -------------->
+    <meta
+      name="description"
+      content="Pagina inspirada en la oficial de Aorus Information"
+    />
+    <meta
+      name="keywords"
+      content="AORUS, PLACA DE VIDEO, RX, RX 6900, AORUS RANDEON, RANDEON, INFO, CARACTERISTICAS"
+    />
+    <meta name="theme-color" content="#1A1A1A" />
+    <meta property="og.title" content="AORUS Radeon™ RX 6900 Information" />
+    <meta
+      property="og.description"
+      content="Pagina inspirada en la oficial de Aorus Information"
+    />
+    <meta property="og.type" content="website" />
+    <title>AORUS Radeon information</title>
+
+    <!----------------- links ---------------------->
+    <link rel="shortcut icon" href="../assets/logo.svg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../assets/logo.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!----------------- Loading --------------------->
+
+    <div class="loading" data-loading>
+      <img src="../assets/logo.svg" alt="loading" />
+    </div>
+
+    <!-- Encabezado y barra de navegación -->
+    <header class="header__nav">
+      <nav class="nav__bar">
+        <a href="../index.html" class="nav__logo">
+          <img src="../assets/logo-header.png" alt="Logo de Aorus" />
+        </a>
+        <div class="nav__container" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="../index.html">Home</a></li>
+            <li class="nav__item"><a href="#home">Info</a></li>
+            <li class="nav__item button__nav">
+              <a href="../pages/shop.html"
+                ><i class="fa-solid fa-cart-shopping animation-icon"></i> Buy
+              </a>
+            </li>
+          </ul>
+          <i
+            class="fa-solid fa-xmark close__button"
+            id="nav-close"
+            aria-label="close menu"
+          ></i>
+        </div>
+        <div class="nav-toggle" id="nav-toggle" aria-label="open menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!----------- Contenido principal --------------->
+
+    <main class="main" id="home">
+      <!-- Info video section -->
+      <section class="background__info">
+        <section class="video__info container" aria-label="info video">
+          <div class="info__video">
+            <h1 class="info__text">RX 6900 XT MASTER 16G</h1>
+            <h4 class="subtitle__h4">Gaming Revolutionized</h4>
+            <p class="paragraph">
+              The AORUS Radeon™ RX 6900 XT MASTER 16G redefines gaming with its
+              unrivaled performance. Experience seamless gameplay and immersive
+              visuals like never before.
+            </p>
+          </div>
+          <div class="info__iframe">
+            <iframe
+              class="info__video__iframe"
+              src="https://www.youtube.com/embed/TqP9Q5FFEu4?si=4AsaB25o0JcF3raw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+
+        <!-- Performance info -->
+
+        <section
+          id="performance"
+          class="performance__section container"
+          aria-label="performance buttons"
+        >
+          <!-- Performance images -->
+
+          <div class="performance-imgs">
+            <img
+              class="performance-img performance-img-video1 active"
+              src="../assets/info-performance.png"
+              alt="Imagen para la muestra de rendimiento de la placa de video"
+            />
+            <img
+              class="performance-img performance-img-video2"
+              src="../assets/info-performance-2.png"
+              alt="Imagen para la muestra de rendimiento de la placa de video"
+            />
+            <img
+              class="performance-img performance-img-video3"
+              src="../assets/info-performance-3.png"
+              alt="Imagen para la muestra de rendimiento de la placa de video"
+            />
+            <video
+              class="performance-img performance-img-video4"
+              src="../assets/max_covered_cooling.mp4"
+              muted
+              autoplay
+              loop
+            ></video>
+          </div>
+
+          <!-- Performance info -->
+
+          <div class="performance__info__container">
+            <h2 class="subtitle__h2">Performance</h2>
+            <p class="paragraph">
+              The Radeon™ RX 6900 XT has 5120 stream processors, new and
+              powerful compute units, and the new AMD Infinity Cache, along with
+              up to 16 GB of dedicated GDDR6 memory, delivering ultra-high frame
+              rates and serious 4K gaming performance.
+            </p>
+
+            <article class="performance__items__container">
+              <!-- METAL BACKPLATE -->
+
+              <div class="interactive__text__container active">
+                <button
+                  class="button__interactive"
+                  data-target="performance-img-video1"
+                  aria-label="interactive button"
+                >
+                  METAL BACKPLATE <i class="fa-solid fa-caret-right"></i>
+                </button>
+                <p class="paragraph__button">
+                  The metal backplate not only provides an aesthetic form, but
+                  also enhances the structure of the graphics card for
+                  comprehensive protection.
+                </p>
+              </div>
+
+              <!-- DUAL BIOS -->
+
+              <div class="interactive__text__container">
+                <button
+                  class="button__interactive"
+                  data-target="performance-img-video2"
+                  aria-label="interactive button"
+                >
+                  DUAL BIOS <i class="fa-solid fa-caret-right"></i>
+                </button>
+                <p class="paragraph__button">
+                  The silent mode will provide a very muted sound experience
+                  with its fans. Changing modes requires a restart to take
+                  effect. The default mode is OC.
+                </p>
+              </div>
+
+              <!-- POWER INDICATORS -->
+
+              <div class="interactive__text__container">
+                <button
+                  class="button__interactive"
+                  data-target="performance-img-video3"
+                  aria-label="interactive button"
+                >
+                  POWER INDICATORS <i class="fa-solid fa-caret-right"></i>
+                </button>
+                <p class="paragraph__button">
+                  When experiencing any anomaly in the power supply, the
+                  indicator will alert gamers with a flashing light.
+                </p>
+              </div>
+
+              <!-- COOLING DEMONSTRATION -->
+
+              <div class="interactive__text__container">
+                <button
+                  class="button__interactive"
+                  data-target="performance-img-video4"
+                  aria-label="interactive button"
+                >
+                  COOLING DEMONSTRATION <i class="fa-solid fa-caret-right"></i>
+                </button>
+                <p class="paragraph__button">
+                  Optimal performance and efficiency, ensuring your system stays
+                  cool even under the most demanding conditions.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <!-- Especific info -->
+
+      <section class="especific__info container" aria-label="especifications">
+        <table class="especific__table">
+          <!-- table head -->
+
+          <thead class="table__head">
+            <tr>
+              <th class="table__head__title" colspan="2">Especific</th>
+            </tr>
+          </thead>
+
+          <!-- Table body -->
+
+          <tbody class="table__body">
+            <tr>
+              <td class="table__title__body">Graphics Processing</td>
+              <td class="table__info__body">Radeon™ RX 6900 XT</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Core Clock</td>
+              <td class="table__info__body">
+                <p>Boost Clock* : up to 2365 MHz (Reference card: 2250 MHz)</p>
+                <p>Game Clock* : up to 2135 MHz (Reference card: 2015 MHz)</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Stream Processors</td>
+              <td class="table__info__body">5120</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Process Technology</td>
+              <td class="table__info__body">7 nm</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Memory Clock</td>
+              <td class="table__info__body">16000 MHz</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Memory Size</td>
+              <td class="table__info__body">16 GB</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Memory Type</td>
+              <td class="table__info__body">GDDR6</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Memory Bus</td>
+              <td class="table__info__body">256 bit</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Memory Bandwidth (GB/sec)</td>
+              <td class="table__info__body">512 GB/s</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Card Bus</td>
+              <td class="table__info__body">PCI-E 4.0 x 16</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Digital max resolution</td>
+              <td class="table__info__body">7680x4320</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Multi-view</td>
+              <td class="table__info__body">4</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Card size</td>
+              <td class="table__info__body">L=322 W=140 H=60 mm</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">PCB Form</td>
+              <td class="table__info__body">ATX</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">DirectX 12</td>
+              <td class="table__info__body">Ultimate OpenGL 4.6</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Recommended PSU</td>
+              <td class="table__info__body">850W</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Power Connectors</td>
+              <td class="table__info__body">8 pin*3</td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Output</td>
+              <td class="table__info__body">
+                <p>DisplayPort 1.4a *2</p>
+                <p>HDMI 2.1 *2</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__title__body">Accessories</td>
+              <td class="table__info__body">
+                <p>1. Quick guide</p>
+                <p>2. 4-year warranty registration</p>
+                <p>3. Metal sticker/p></p>
+              </td>
+            </tr>
+          </tbody>
+
+          <!-- table foot -->
+
+          <tfoot class="table__foot">
+            <tr>
+              <th class="table__foot__title">Note</th>
+              <th class="table__foot__info">
+                * “Boost Clock” is the maximum frequency achievable on the GPU
+                running a bursty workload. Boost clock achievability, frequency,
+                and sustainability will vary based on several factors, including
+                but not limited to: thermal conditions and variation in
+                applications and workloads. * “Game Clock” is the expected GPU
+                clock when running typical gaming applications, set to typical
+                TGP (Total Graphics Power). Actual individual game clock results
+                may vary.
+              </th>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- Sponsor info section -->
+
+      <section class="info__sponsor container" aria-label="sponsor">
+        <img src="../assets/patrocinadores/009.png" alt="Imagen de HDMI" />
+        <p class="paragraph">
+          Excepteur efficient emerging, minim veniam anim aute carefully curated
+          Ginza conversation exquisite perfect nostrud nisi intricate Content.
+          Qui international first-class nulla ut. Punctual adipisicing,
+          essential lovely queen tempor eiusmod irure. Exclusive izakaya
+          charming Scandinavian impeccable aute quality of life soft power
+          pariatur Melbourne occaecat discerning.
+        </p>
+      </section>
+    </main>
+
+    <!------------------ Footer --------------------->
+
+    <footer class="footer">
+      <!-- footer nav-->
+      <div class="footer__nav container grid">
+        <!-- Footer info -->
+
+        <section class="footer__logo">
+          <a href="#" class="footer__logo__img">
+            <img src="../assets/logo.svg" alt="Logo de Aorus" />
+          </a>
+
+          <article class="footer__social__links">
+            <a
+              href="https://www.facebook.com/?locale=es_LA"
+              target="_blank"
+              rel="noopender"
+              class="social__icons"
+            >
+              <i class="fa-brands fa-facebook animation-icon"></i>
+            </a>
+            <a
+              href="https://twitter.com/iniciarsesion?lang=es"
+              target="_blank"
+              rel="noopender"
+              class="social__icons"
+            >
+              <i class="fa-brands fa-square-x-twitter animation-icon"></i>
+            </a>
+            <a
+              href="https://ar.linkedin.com/"
+              target="_blank"
+              rel="noopender"
+              class="social__icons"
+            >
+              <i class="fa-brands fa-linkedin animation-icon"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopender"
+              class="social__icons"
+            >
+              <i class="fa-brands fa-instagram animation-icon"></i>
+            </a>
+          </article>
+        </section>
+
+        <!-- Footer links -->
+
+        <section class="footer__links">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="comeback to"
+            >
+              Comeback to
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html">Home</a></li>
+              <li><a class="dropdown-item" href="#home">Info</a></li>
+              <li>
+                <a class="dropdown-item" href="../pages/shop.html">Shop</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="References"
+            >
+              References
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.aorus.com/es-ar"
+                  target="_blank"
+                  rel="noopender"
+                  >Pagina Oficial</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.aorus.com/es-ar/graphics-cards/GV-R69XTAORUS-M-16GD-rev-10"
+                  target="_blank"
+                  rel="noopender"
+                  >Buy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.coderhouse.com/ar/"
+                  target="_blank"
+                  rel="noopender"
+                  >Coderhouse</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <!-- Footer copy-->
+
+      <section class="footer__copy">
+        <p class="footer__copy__text">
+          Copyright &copy; 2024 Marcos Morua. All rights reserved.
+        </p>
+      </section>
+    </footer>
+
+    <!-- Scrool up -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="fa-solid fa-caret-up"></i>
+    </a>
+  </body>
+
+  <!-------------------- Scripts -------------------->
+
+  <!-- Boostrap -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Script -->
+
+  <script src="../js/app.js"></script>
+
+  <!-- Font Awesome -->
+
+  <script
+    src="https://kit.fontawesome.com/1dd5c61ab9.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

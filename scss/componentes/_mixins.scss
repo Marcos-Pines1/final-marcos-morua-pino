@@ -1,0 +1,22 @@
+// mixins para el layout
+
+@mixin dplay($alingi, $justic, $gaps){
+  display: flex;
+  align-items: $alingi;
+  justify-content: $justic;
+  gap: $gaps;
+}
+
+@mixin grid($colum, $gaps){
+  display: grid;
+  grid-template-columns: $colum;
+  gap: $gaps
+}
+
+// img
+
+@mixin backgroundimg($url, $position, $size){
+  background-image: $url;
+  background-position: $position;
+  background-size: $size;
+}

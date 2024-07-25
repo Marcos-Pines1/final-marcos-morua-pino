@@ -1,0 +1,112 @@
+// Base resets
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 0;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  color: $main-text-color;
+  background-color: $body-color;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: $main-text-color;
+}
+
+p, a, li, dl, ol, ul{
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* hedding and paragraph base styles */
+
+h1 {
+  font-size: $h1;
+  font-weight: $fw-600;
+}
+
+h2 {
+  font-size: $h2;
+  font-weight: $fw-600;
+}
+
+h3 {
+  font-size: $h3;
+  font-weight: $fw-500;
+}
+
+h4 {
+  font-size: $h4;
+  font-weight: $fw-500;
+}
+
+h5{
+  font-size: $h5;
+  font-weight: $fw-400;
+}
+
+p{
+  font-size: $p;
+  font-weight: $fw-400;
+  line-height: 1.5;
+}
+
+i{
+  font-size: $h4;
+  font-weight: $fw-500;
+}
+
+/* table styles */
+
+table {
+  max-width: 100%;
+  border-spacing: 0;
+  border: solid 5px #0a0a0a77;
+}
+
+td,
+th {
+  border-top: solid 5px #0a0a0a77;
+  padding: 10px 15px;
+}
+
+/* form styles */
+
+input,
+textarea {
+  background: $form-input-background;
+  color: $form-input;
+  padding: 10px;
+  border: 1px solid $form-input-border;
+  border-radius: 8px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $form-placeholder;
+  font-size: 0.8rem;
+}
+
+label {
+  font-size: 0.9rem;
+}

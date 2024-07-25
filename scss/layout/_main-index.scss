@@ -1,0 +1,253 @@
+/*=================== index Page styles ==================*/
+
+/*------------- home styles -----------------*/
+
+.home__section {
+  @include backgroundimg(url("../assets/hero-bg.jpg"), center center, cover);
+
+  .home__container {
+    @include dplay(center, center, 2.5rem);
+    flex-direction: column;
+    padding: 15px 10px 40px;
+
+    // main text
+
+    .main__text {
+      text-align: center;
+      width: 100%;
+    }
+
+    // Float social buttons
+
+    .float__social,
+    .float__social ul {
+      display: flex;
+      gap: 2.5rem;
+    }
+
+    .float__social {
+  
+      .text__float__social {
+        position: relative;
+        font-size: 1.2rem;
+
+        .social__home__links,
+        .social__home__links i {
+          font-size: 1.2rem;
+          transition: 0.4s;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 110%;
+          top: 50%;
+          width: 1.6rem;
+          height: 2px;
+          background-color: $main-text-color;
+          display: block;
+        }
+      }
+
+      ul {
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+/*---------------- info styles ----------------*/
+
+.info__section {
+  background-color: $bg-black;
+
+  .info__container {
+    gap: 2rem;
+
+    .info__container__text {
+      margin: auto;
+      gap: 0.7rem;
+    }
+
+    .subtitle__h3 {
+      margin: 15px 0
+    }
+
+    .info__container__img {
+      margin: auto;
+    }
+  }
+}
+
+/*---------------- concept styles ----------------*/
+
+.concep__section {
+  height: 100%;
+  @include backgroundimg(url("../assets/home-Concep-bg.jpg"), center, cover);
+
+  .concept__container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    // concept text 
+    .concept__text {
+      margin-top: 20px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    // concept images relative
+
+    .concept__relative {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+      }
+
+      .concept__front__image {
+        position: relative;
+        bottom: 40px;
+        right: 50px;
+        z-index: 2;
+      }
+
+      .concept__back__image {
+        z-index: 1;
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+      }
+    }
+  }
+}
+
+/*---------------- lcd styles ----------------*/
+
+.lcd__section {
+  padding: 60px 10px;
+  position: relative;
+
+  .lcd__info__container {
+    
+    // title and subtitle
+    .subtitle__h2,
+    .paragraph {
+      width: 100%;
+    }
+
+    .lcd__items__container {
+      display: flex;
+      flex-direction: column;
+
+      /* lcd images */
+
+      .interactive__images__container {
+        height: 100px;
+
+        .active-imgs {
+          pointer-events: none;
+          position: absolute;
+          left: 52%;
+          bottom: 0;
+          transform: translate(-50%, 0);
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+
+          & > .lcd-img-1{
+            position: relative;
+            left: 52%;
+            bottom: 0;
+            transform: translate(-50%, 0);
+            opacity: 1;
+          }
+
+          & > img{
+            position: absolute;
+            left: 52%;
+            bottom: 0;
+            transform: translate(-50%, 0);
+            width: 100%;
+            opacity: 0;
+          }
+
+          & >.lcd-img-video4 {
+            position: absolute;
+            transform: translate(-17%, -64.1%) rotate(-40deg) scale(0.18);
+            top: 50%;
+            left: 52%;
+          }
+
+          & >.lcd-img-video5 {
+            position: absolute;
+            transform: translate(-17%, -64.1%) rotate(-40deg) scale(0.18);
+            top: 50%;
+            left: 52%;
+          }
+
+          // lcd section active 
+          & >img.active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.interactive__text__container {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 5px;
+
+  .fa-caret-right {
+    transition: 0.4s;
+  }
+
+  // active button icon
+
+  &.active .fa-caret-right {
+    transform: rotate(90deg);
+  }
+
+  .paragraph__button {
+    width: 100%;
+    display: none;
+  }
+
+  // active paragraph
+
+  &.active .paragraph__button {
+    padding-top: 20px;
+    display: block;
+  }
+}
+
+/*---------------- sponsor styles----------------*/
+
+.sponsor__section {
+  background-color: $second-color-bg;
+  padding: 40px 0;
+
+  .sponsor__container {
+    @include grid (repeat(3, 30%), 1rem 1.5rem);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+
+    .sponsor__img {
+      width: 100%;
+      transition: 0.4s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+

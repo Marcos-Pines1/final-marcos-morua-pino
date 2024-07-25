@@ -1,0 +1,57 @@
+/*=================== footer styles =================*/
+
+.footer {
+  background-color: $second-color-bg;
+  border-top: $border-shadow;
+
+  .footer__nav {
+    padding: 30px 30px;
+    grid-template-columns: 1fr;
+    gap: 4rem 5rem;
+
+    // footer social links y logo
+
+      .footer__logo {
+        @include dplay(center, center, 2rem 5rem);
+        flex-direction: column;
+        width: 200px;
+        margin: auto;
+
+        .footer__logo__img {
+          width: 40%;
+        }
+
+        .footer__social__links {
+          @include dplay(center, space-evenly, 1.5rem);
+          flex-direction: row;
+          flex-wrap: wrap;
+          
+            .social__icons {
+              font-size: 1.5rem;
+            }
+        }
+      }
+
+      // footer links page
+
+      .footer__links {
+        @include grid(repeat(2, max-content), 0);
+        justify-content: space-evenly;
+      }
+
+      
+  }
+
+  // Copyright style
+
+  .footer__copy {
+    padding: 10px;
+    text-align: center;
+
+    .footer__copy__text {
+      font-size: 0.65rem;
+      color: $copy-color;
+    }
+  }
+}
+

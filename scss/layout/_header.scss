@@ -1,0 +1,89 @@
+/*=============== header styles ===============*/
+
+.header__nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header;
+  background-color: $second-color-bg;
+  transition: background-color 0.4s;
+  z-index: 100;
+
+  @include dplay(center, space-between, 0);
+
+  .nav__bar {
+    position: relative;
+    @include dplay(center, space-between, 0);
+    width: 100%;
+    padding: 5px 20px;
+
+    .nav__logo{
+      width: 150px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .nav__container {
+      position: fixed;
+      width: 60%;
+      top: 0;
+      right: -100%;
+      height: 100%;
+      background-color: $form-background;
+      transition: 0.5s;
+  
+      &.show-menu {
+          right: 0;
+        }
+
+      .nav__list {
+        display: flex;
+        flex-direction: column;
+        @include dplay(center, center, 2.5rem);
+        height: 90%;
+
+        .nav__item::after {
+          content: '';
+          width: 0%;
+          height: 3px;
+          background-color: $main-text-color;
+          display: block;
+          transition: 0.4s;
+        }
+
+        .nav__item:hover::after{
+          width: 100%;
+        }
+
+        a{
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+
+        .button__nav{
+
+          a{
+            color: #0A0A0A;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background-color: $button-background;
+          }
+        }
+      }
+    }
+  }
+}
+
+.close__button {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.close__button,
+.nav-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}

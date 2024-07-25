@@ -1,0 +1,36 @@
+// Main config
+
+@import "config/_variables.scss";
+@import "config/_reset.scss";
+@import "config/_boostrap.scss";
+@import "config/reutilizable.scss";
+
+// Compontentes 
+
+@import "componentes/_componentes.scss";
+@import "componentes/mixins";
+
+// Layout
+
+@import "layout/_header.scss";
+@import "layout/_main-index.scss";
+@import "layout/_info-index.scss";
+@import "layout/_shop-index.scss";
+@import "layout/_footer.scss";
+
+
+/* Main styles scss */
+
+// icons hover 
+
+.social__icons:hover,
+.social__home__links i:hover,
+.link__footer:hover {
+  color: $main-color;
+}
+
+
+// media y animaciones
+
+@import "componentes/animation";
+@import "layout/_media.scss";

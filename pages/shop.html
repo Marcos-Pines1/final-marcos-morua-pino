@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AORUS Radeon Shop</title>
+
+    <!-- meta etiquetas -->
+    <meta
+      name="description"
+      content="Página inspirada en la oficial de Aorus Shop"
+    />
+    <meta
+      name="keywords"
+      content="AORUS, PLACA DE VIDEO, RX, RX 6900, AORUS RANDEON, RANDEON, COMPRAR"
+    />
+    <meta name="theme-color" content="#1A1A1A" />
+    <meta property="og.title" content="AORUS Radeon™ RX 6900 Shop" />
+    <meta
+      property="og.description"
+      content="Página inspirada en la oficial de Aorus Shop"
+    />
+    <meta property="og.type" content="website" />
+
+    <!-- Links -->
+    <link rel="shortcut icon" href="../assets/logo.svg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../assets/logo.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!----------------- Loading --------------------->
+
+    <div class="loading" data-loading>
+      <img src="../assets/logo.svg" alt="loading" />
+    </div>
+
+    <!-- Encabezado y barra de navegación -->
+    <header class="header__nav">
+      <nav class="nav__bar">
+        <a href="../index.html" class="nav__logo">
+          <img src="../assets/logo-header.png" alt="Logo de Aorus" />
+        </a>
+        <div class="nav__container" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="../index.html">Home</a></li>
+            <li class="nav__item"><a href="../pages/info.html">Info</a></li>
+            <li class="nav__item button__nav">
+              <a href="#home"
+                ><i class="fa-solid fa-cart-shopping animation-icon"></i> Buy
+              </a>
+            </li>
+          </ul>
+          <i
+            class="fa-solid fa-xmark close__button"
+            id="nav-close"
+            aria-label="close menu"
+          ></i>
+        </div>
+        <div class="nav-toggle" id="nav-toggle" aria-label="open menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main" id="home">
+      <section class="form__container container" aria-label="main form">
+        <div class="shop__product" aria-label="product item">
+          <article class="shop__info">
+            <h1 class="product__title">AORUS Radeon™ RX 6900 XT MASTER 16G</h1>
+            <div class="product__container">
+              <img
+                class="img__product"
+                src="../assets/home-Image.png"
+                alt="Imagen de la AORUS Radeon™ RX 6900 XT MASTER 16G"
+              />
+            </div>
+            <h3 class="product__price__text">Price: $$$$$$$$</h3>
+          </article>
+          <article class="shop__info">
+            <h4 class="shop__suport">Contact Our Technical Support</h4>
+            <p class="shop__paragraph__info">
+              To contact us, send an email to
+              <a href="mailto:support@example.com">support@example.com</a> or
+              give us a call at <a href="tel:+123456789">+123456789</a>. Our
+              team will be happy to address your concerns and ensure you have
+              the best experience possible.
+            </p>
+            <p class="shop__paragraph__info">
+              Remember, we're available to assist you from Monday to Friday,
+              9:00 AM to 6:00 PM (local time). Don't hesitate to reach out;
+              we're here to make your life easier!
+            </p>
+          </article>
+        </div>
+
+        <div class="contact__mail form" aria-label="contact form">
+          <form action="" class="contact__form" id="contact-form">
+            <h3 class="contact__title">User info</h3>
+            <div class="user__form contact-form">
+              <div class="contact__group">
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    class="contact__input"
+                    name="user_first_name"
+                    id="first-name"
+                    required
+                    placeholder="Jane"
+                  />
+                  <label for="first-name" class="contact__label"
+                    >First Name</label
+                  >
+                </div>
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    class="contact__input"
+                    name="user_last_name"
+                    id="last-name"
+                    required
+                    placeholder="Smitherton"
+                  />
+                  <label for="last-name" class="contact__label"
+                    >Last name</label
+                  >
+                </div>
+              </div>
+              <div class="contact__box">
+                <input
+                  type="email"
+                  class="contact__input"
+                  name="user_email"
+                  id="email"
+                  required
+                  placeholder="email@janesfakedomain.net"
+                />
+                <label for="email" class="contact__label">Email Address</label>
+              </div>
+              <div class="contact__group">
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    class="contact__input"
+                    name="user__city"
+                    id="city"
+                    required
+                    placeholder="Puerto Madryn"
+                  />
+                  <label for="city" class="contact__label"> City </label>
+                </div>
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    class="contact__input"
+                    name="user_street"
+                    id="street"
+                    required
+                    placeholder="Roca, 1220"
+                  />
+                  <label for="street" class="contact__label"> Street </label>
+                </div>
+              </div>
+              <div class="contact__box contact__area">
+                <textarea
+                  name="user_message"
+                  id="message"
+                  class="contact__input"
+                  required
+                  placeholder="Provide more information that can help us."
+                  cols="21"
+                  rows="5"
+                ></textarea>
+                <label for="message" class="contact__label">More info</label>
+              </div>
+            </div>
+            <h3 class="contact__title">Paid data</h3>
+            <div class="user__form paid-form">
+              <div class="contact__box">
+                <input
+                  type="number"
+                  class="contact__input"
+                  name="user_card-number"
+                  id="card-number"
+                  required
+                  maxlength="16"
+                  placeholder="4444 4444 4444 4444"
+                />
+                <label for="card-number" class="contact__label"
+                  >Card Number</label
+                >
+              </div>
+              <div class="contact__box">
+                <input
+                  type="text"
+                  class="contact__input"
+                  name="user_card-name"
+                  id="card-name"
+                  required
+                  placeholder="Marcos Adrian Morua Pino"
+                />
+                <label for="card-name" class="contact__label">Full name</label>
+              </div>
+              <div class="contact__group">
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    class="contact__input"
+                    name="card_expiration-date"
+                    id="expiration-date"
+                    required
+                    placeholder="00/27"
+                  />
+                  <label for="expiration-date" class="contact__label"
+                    >Expiration date</label
+                  >
+                </div>
+                <div class="contact__box">
+                  <input
+                    type="number"
+                    class="contact__input"
+                    name="card-cvv"
+                    id="card-cvv"
+                    required
+                    placeholder="222"
+                  />
+                  <label for="card-cvv" class="contact__label">CVV</label>
+                </div>
+              </div>
+              <div class="contact__box">
+                <input
+                  type="number"
+                  class="contact__input"
+                  name="card_dni_user"
+                  id="card_dni"
+                  required
+                  placeholder="15464657"
+                />
+                <label for="card_dni" class="contact__label">DNI</label>
+              </div>
+              <div class="button__container">
+                <p class="contact__message" id="contact-message"></p>
+                <button type="submit" class="contact shop btn">
+                  <i class="fa-solid fa-cart-shopping animation-icon"></i> Buy
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <!-- footer nav-->
+      <div class="footer__nav container grid">
+        <!-- Footer info -->
+
+        <section class="footer__logo">
+          <a href="#" class="footer__logo__img">
+            <img src="../assets/logo.svg" alt="Logo de Aorus" />
+          </a>
+
+          <article class="footer__social__links">
+            <a
+              href="https://www.facebook.com/?locale=es_LA"
+              target="_blank"
+              rel="noopender"
+              class="social__icons"
+            >
+              <i class="fa-brands fa-facebook animation-icon"></i>
+            </a>
+            <a
+              href="https://twitter.com/iniciarsesion?lang=es"
+              target="_blank"
+              rel="noopender"
+              class="social__icons"
+            >
+              <i class="fa-brands fa-square-x-twitter animation-icon"></i>
+            </a>
+            <a
+              href="https://ar.linkedin.com/"
+              target="_blank"
+              rel="noopender"
+              class="social__icons"
+            >
+              <i class="fa-brands fa-linkedin animation-icon"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopender"
+              class="social__icons"
+            >
+              <i class="fa-brands fa-instagram animation-icon"></i>
+            </a>
+          </article>
+        </section>
+
+        <!-- Footer links -->
+
+        <section class="footer__links">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="comeback to"
+            >
+              Comeback to
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html">Home</a></li>
+              <li>
+                <a class="dropdown-item" href="../pages/shop.html">Info</a>
+              </li>
+              <li><a class="dropdown-item" href="#home">Shop</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="References"
+            >
+              References
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.aorus.com/es-ar"
+                  target="_blank"
+                  rel="noopender"
+                  >Pagina Oficial</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.aorus.com/es-ar/graphics-cards/GV-R69XTAORUS-M-16GD-rev-10"
+                  target="_blank"
+                  rel="noopender"
+                  >Buy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://www.coderhouse.com/ar/"
+                  target="_blank"
+                  rel="noopender"
+                  >Coderhouse</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <!-- Footer copy-->
+
+      <section class="footer__copy">
+        <p class="footer__copy__text">
+          Copyright &copy; 2024 Marcos Morua. All rights reserved.
+        </p>
+      </section>
+    </footer>
+
+    <!-- Scrool up -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="fa-solid fa-caret-up"></i>
+    </a>
+  </body>
+
+  <!-------------------- Scripts -------------------->
+
+  <!-- Boostrap -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Script -->
+
+  <script src="../js/app.js"></script>
+
+  <!-- Font Awesome -->
+
+  <script
+    src="https://kit.fontawesome.com/1dd5c61ab9.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

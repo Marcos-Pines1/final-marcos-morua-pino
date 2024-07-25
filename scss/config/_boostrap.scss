@@ -1,0 +1,68 @@
+/* Boostrap selectores reutilizables */
+
+.row {
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 60px 20px;
+  margin: 0 auto;
+}
+
+// Dropdown Boostrap 
+
+
+
+.dropdown{
+
+  width: 100%;
+  height: 150px;
+
+  .btn{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    color: $main-text-color;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    &::after{
+      content: "";
+      display: none;
+    }
+
+    &:focus:not(:focus-visible){
+      outline: none;
+    }
+
+    &:hover{
+      color: $main-color;
+    }
+  }
+
+  .btn.show{
+    border: none;
+  }
+
+  .dropdown-menu{
+    width: 100%;
+    transition: transform 0.4s;
+    border: none;
+    background: $body-color;
+
+    .dropdown-item{
+      color: $main-text-color;
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+
+      &:hover{
+        background-color: $main-color;
+        color: $body-color;
+      }
+    }
+  }
+}
