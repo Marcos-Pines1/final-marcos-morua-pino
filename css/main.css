@@ -149,12 +149,14 @@ label {
   height: 150px;
 }
 .dropdown .btn {
-  background-color: transparent;
+  position: relative;
+  background-color: #161616;
   width: 100%;
   border: none;
   color: #F1F1F1;
   font-size: 1.3rem;
   font-weight: 600;
+  z-index: 100;
 }
 .dropdown .btn::after {
   content: "";
@@ -173,7 +175,8 @@ label {
   width: 100%;
   transition: transform 0.4s;
   border: none;
-  background: #1A1A1A;
+  background: transparent;
+  z-index: 99;
 }
 .dropdown .dropdown-menu .dropdown-item {
   color: #F1F1F1;
@@ -184,8 +187,8 @@ label {
   font-weight: 500;
 }
 .dropdown .dropdown-menu .dropdown-item:hover {
-  background-color: #BE60F4;
-  color: #1A1A1A;
+  background-color: transparent;
+  color: #BE60F4;
 }
 
 /* selectores reutilizables */

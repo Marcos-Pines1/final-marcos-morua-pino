@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const swiperContainer = document.querySelector(".other__swiper");
 
+// Si no hay contenedor Swiper en la página, salir sin ejecutar nada más
 if (swiperContainer) {
   let swiper = new Swiper(swiperContainer, {
     loop: true,
@@ -127,14 +128,34 @@ if (swiperContainer) {
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
 const sr = ScrollReveal({
-  origin: 'top',
-  distance: '80px',
-  duration: 2500,
-  delay: 300,
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
 })
 
-sr.reveal('.home__img, .new__data, .care__img, .contact__content, .footer')
-sr.reveal('.home__data, .care__list, .contact__img', { delay: 500 })
-sr.reveal('.new__card', { delay: 500, interval: 100 })
-sr.reveal('.shop__card', {interval: 100 })
 
+sr.reveal(`.other-products, .info__sponsor`, { origin: 'bottom' })
+sr.reveal('.interactive__text__container', { origin: 'left', delay: 300, interval: 300 })
+sr.reveal(`.lcd__info__titles`, { origin: 'left', delay: 200 })
+sr.reveal('.sponsor__img', { interval: 200 })
+
+function applyScrollReveal() {
+  const sr = ScrollReveal();
+
+  sr.clean('.info__container__img, .concept__text');
+
+  if (window.innerWidth >= 768) {
+    sr.reveal(`.main__text, .home__product__img, .especific__info`)
+    sr.reveal(`.info__container__text, .concept__relative, .info__video, .shop__info`, {origin: 'left'})
+    sr.reveal(`.info__container__img, .concept__text, .info__iframe, .contact__mail`, { origin: 'right' })
+    sr.reveal(`.float__social`, { origin: 'left', delay: 200 })
+  } else {
+    sr.reveal(`.main__text, .home__product__img, .float__social, .info__container__img, .info__container__text, .concept__relative, .concept__text, .video__info, .especific__info,.shop__product, .contact__mail`)
+
+  }
+}
+
+applyScrollReveal();
+
+window.addEventListener('resize', applyScrollReveal);
