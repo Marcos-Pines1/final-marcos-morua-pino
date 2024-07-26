@@ -1,6 +1,7 @@
 /* Boostrap selectores reutilizables */
 
 .row {
+  margin: 0;
   align-items: center;
   justify-content: center;
 }
@@ -10,9 +11,15 @@
   margin: 0 auto;
 }
 
+// Ventana modal de Boostrap
+
+.modal{
+  --bs-modal-padding: 0;
+  --bs-modal-margin: 0;
+  --bs-modal-width: 70%;
+}
+
 // Dropdown Boostrap 
-
-
 
 .dropdown{
 

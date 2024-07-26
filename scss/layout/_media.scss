@@ -299,6 +299,42 @@
     }
   }
 
+  /*============== Shop modal Page Media =================*/
+
+  .modal{
+    --bs-modal-width: 90%;
+  }
+
+  .form__container{
+    .modal{
+      .modal-dialog{
+        .modal-content{
+          top: 10%;
+          padding: 2rem 0;
+
+          .modal-header{
+            padding: 0;
+            
+            .close__modal{
+              top: 0px;
+              right: 20px;
+
+              i{
+                font-size: 1.7rem;
+              }
+            }
+          }
+
+          .modal-body{
+            justify-content: space-around;
+            align-items: start;
+            gap: 0;
+          }
+        }
+      }
+    }
+  }
+
   /*================= Footer =================*/
 
   .footer{
@@ -369,6 +405,10 @@
   }
 
   /*================== shop page styles ====================*/
+
+  .modal{
+    --bs-modal-width: 70%;
+  }
 
   // form styles
 

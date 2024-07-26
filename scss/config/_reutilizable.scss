@@ -15,9 +15,20 @@
 
 .subtitle__h3 {
   font-weight: 500;
+  margin: 10px 0;
 }
 
 .paragraph {
   color: $second-text-color;
   line-height: 1.5rem;
+}
+
+.product__container {
+  padding: 40px 10px;
+  background-color: $product-background;
+
+  .img__product {
+    margin: auto;
+    width: 90%;
+  }
 }

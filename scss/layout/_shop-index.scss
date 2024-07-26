@@ -44,22 +44,73 @@
           transition: 0.4s;
         }
       }
-
-      .product__container {
-        padding: 40px 10px;
-        background-color: $product-background;
-
-        .img__product {
-          margin: auto;
-          width: 90%;
-        }
-      }
     }
   }
 
   // Modal styles 
 
-  .modal
+  .modal{
+
+    .modal-dialog{
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .modal-content{
+        top: 0;
+        padding: 2rem 2rem 3rem;
+        border-radius: 16px;
+        position: absolute;
+        background-color: $second-color-bg;
+
+        .modal-header{
+          justify-content: end;
+          border: none;
+          
+          .close__modal{
+            position: relative;
+            top: -15px;
+            right: -10px;
+            color: $main-color;
+
+            i{
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        .modal-body{
+          justify-content: center;
+          align-items: center;
+          gap: 3rem;
+
+          .modal__title {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+          }
+
+          .modal__body__content{
+            @include dplay(start, start, 2rem);
+            flex-direction: column;
+
+            .subtitle__h3,
+            .product__price__text{
+              font-size: 1.4rem
+            }
+
+            .subtitle__h3:first-of-type{
+              margin-top: 0;
+            }
+
+            .paragraph{
+              font-size: 0.928rem;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 
   // Form styles 
 

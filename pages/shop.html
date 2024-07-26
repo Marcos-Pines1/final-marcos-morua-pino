@@ -74,7 +74,7 @@
         <div class="shop__product" aria-label="product item">
           <!-- Shop Product -->
 
-          <article class="shop__info">
+          <article class="shop__info" aria-label="Shop info product">
             <h1 class="product__title">AORUS Radeon™ RX 6900 XT MASTER 16G</h1>
             <div class="product__container">
               <img
@@ -99,7 +99,7 @@
 
           <!-- Shop contact info -->
 
-          <article class="shop__info">
+          <article class="shop__info" aria-label="Shop info support">
             <h4 class="shop__suport">Contact Our Technical Support</h4>
             <p class="shop__paragraph__info">
               To contact us, send an email to
@@ -121,7 +121,8 @@
             class="modal fade"
             id="exampleModal"
             tabindex="-1"
-            aria-labelledby="exampleModalLabel"
+            aria-label="Modal product description"
+            aria-labelledby="Modal"
             aria-hidden="true"
           >
             <section class="modal-dialog">
@@ -129,22 +130,63 @@
                 <!-- modal Header -->
 
                 <article class="modal-header">
-                  <button
+                  <!-- Modal Close -->
+                  <a
                     type="button"
                     class="close__modal"
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   >
                     <i class="fa-solid fa-xmark" aria-label="close modal"></i>
-                  </button>
+                  </a>
                 </article>
 
                 <!-- modal Body-->
-                <article class="modal-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  libero debitis quaerat quam nobis esse voluptatum
-                  consequuntur, dignissimos veritatis numquam, suscipit magnam
-                  molestias ea similique, nulla itaque modi omnis? Culpa.
+                <article class="modal-body row">
+                  <div class="modal__body__product col-md-5">
+                    <!-- Title -->
+
+                    <h2 class="modal__title">
+                      AORUS Radeon™ RX 6900 XT MASTER 16G
+                    </h2>
+
+                    <!-- product modal -->
+
+                    <div class="product__container">
+                      <img
+                        class="img__product"
+                        src="../assets/home-Image.png"
+                        alt="Imagen de la AORUS Radeon™ RX 6900 XT MASTER 16G"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- info product modal -->
+
+                  <div class="modal__body__content col-md-6">
+                    <article class="modal__body__info">
+                      <h3 class="subtitle__h3">KEY FEATURE</h3>
+                      <p class="paragraph">
+                        Powered by RDNA2 Radeon™ RX 6900 XT
+                      </p>
+                      <p class="paragraph">
+                        Integrated with 16GB GDDR6 256-bit memory
+                      </p>
+                      <p class="paragraph">interface</p>
+                      <p class="paragraph">MAX-Coveredcooling</p>
+                      <p class="paragraph">LCD Edge View</p>
+                      <p class="paragraph">RGB Fusion 2.0</p>
+                      <p class="paragraph">Dual BIOS</p>
+                      <p class="paragraph">Protection metal back plate</p>
+
+                      <h3 class="subtitle__h3">CORE CLOCK</h3>
+
+                      <p class="paragraph">Boost Clock* : up to 2335 MHz</p>
+                      <p class="paragraph">Game Clock* : up to 2135 MHz</p>
+                    </article>
+
+                    <h3 class="product__price__text">Price: $$$$$$$$</h3>
+                  </div>
                 </article>
               </div>
             </section>

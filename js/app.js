@@ -95,3 +95,46 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+/*================= Swipper js ====================*/
+
+const swiperContainer = document.querySelector(".other__swiper");
+
+if (swiperContainer) {
+  let swiper = new Swiper(swiperContainer, {
+    loop: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 20,
+    grabCursor: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
+}
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 2500,
+  delay: 300,
+})
+
+sr.reveal('.home__img, .new__data, .care__img, .contact__content, .footer')
+sr.reveal('.home__data, .care__list, .contact__img', { delay: 500 })
+sr.reveal('.new__card', { delay: 500, interval: 100 })
+sr.reveal('.shop__card', {interval: 100 })
+
