@@ -25,6 +25,26 @@
         font-size: 2.2rem;
       }
 
+      .info__btn{
+        width: max-content;
+        display: inline-flex;
+        gap: 0.5rem;
+        font-weight: $fw-500;
+        transition: transform 0.3s;
+
+        &:hover{
+          transform: translateX(0.7rem) scale(1.05);
+          i{
+            animation: aicon 1.3s ease-in infinite;
+          }
+        }
+
+        i{
+          font-size: 1.5rem;
+          transition: 0.4s;
+        }
+      }
+
       .product__container {
         padding: 40px 10px;
         background-color: $product-background;
@@ -36,6 +56,10 @@
       }
     }
   }
+
+  // Modal styles 
+
+  .modal
 
   // Form styles 
 

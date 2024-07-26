@@ -85,14 +85,14 @@
             </div>
 
             <!-- Modal button -->
-            <a
+            <button
               type="button"
-              class="button__interactive"
+              class="info__btn"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               Launch demo modal <i class="fa-solid fa-caret-right"></i>
-            </a>
+            </button>
 
             <h3 class="product__price__text">Price: $$$$$$$$</h3>
           </article>
@@ -126,14 +126,20 @@
           >
             <section class="modal-dialog">
               <div class="modal-content">
+                <!-- modal Header -->
+
                 <article class="modal-header">
                   <button
                     type="button"
-                    class="btn-close"
+                    class="close__modal"
                     data-bs-dismiss="modal"
                     aria-label="Close"
-                  ></button>
+                  >
+                    <i class="fa-solid fa-xmark" aria-label="close modal"></i>
+                  </button>
                 </article>
+
+                <!-- modal Body-->
                 <article class="modal-body">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
                   libero debitis quaerat quam nobis esse voluptatum
@@ -145,8 +151,12 @@
           </aside>
         </div>
 
+        <!-- Form content -->
+
         <div class="contact__mail form" aria-label="contact form">
           <form action="" class="contact__form" id="contact-form">
+            <!-- User Form -->
+
             <h3 class="contact__title">User info</h3>
             <div class="user__form contact-form">
               <div class="contact__group">
@@ -225,6 +235,9 @@
                 <label for="message" class="contact__label">More info</label>
               </div>
             </div>
+
+            <!-- Paid Form -->
+
             <h3 class="contact__title">Paid data</h3>
             <div class="user__form paid-form">
               <div class="contact__box">
@@ -289,6 +302,9 @@
                 />
                 <label for="card_dni" class="contact__label">DNI</label>
               </div>
+
+              <!-- Button container -->
+
               <div class="button__container">
                 <p class="contact__message" id="contact-message"></p>
                 <button type="submit" class="contact shop btn">

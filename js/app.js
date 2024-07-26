@@ -46,7 +46,7 @@ navLinks.forEach((link) => {
 
 const scrollUp = () =>{
   const scrollUp = document.getElementById('scroll-up');
-  // cuando el scroll sea superior a 560 de altura del viewport, agrega show-scroll 
+  // cuando el scroll sea superior a 350 de altura del viewport, agrega show-scroll 
   if(this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll');
 }
 
@@ -56,6 +56,11 @@ window.addEventListener('scroll', scrollUp);
 
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.button__interactive');
+
+  if (buttons.length === 0) {
+    // Si no hay botones interactivos en la página, salir sin ejecutar nada más
+    return;
+  }
 
   buttons.forEach(function(button) {
     button.addEventListener('click', function() {
@@ -89,3 +94,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+

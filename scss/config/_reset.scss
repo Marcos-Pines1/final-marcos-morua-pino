@@ -110,3 +110,20 @@ textarea::placeholder {
 label {
   font-size: 0.9rem;
 }
+
+// Barra lateral
+
+::-webkit-scrollbar{
+  background-color: $second-color-bg;
+  width: 0.4rem;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: $contact-info-background;
+  border-radius: 8px;
+
+  &:hover{
+    background-color: $second-button-background;
+  }
+}
