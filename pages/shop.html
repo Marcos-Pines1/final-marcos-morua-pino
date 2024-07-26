@@ -72,6 +72,8 @@
     <main class="main" id="home">
       <section class="form__container container" aria-label="main form">
         <div class="shop__product" aria-label="product item">
+          <!-- Shop Product -->
+
           <article class="shop__info">
             <h1 class="product__title">AORUS Radeon™ RX 6900 XT MASTER 16G</h1>
             <div class="product__container">
@@ -81,8 +83,22 @@
                 alt="Imagen de la AORUS Radeon™ RX 6900 XT MASTER 16G"
               />
             </div>
+
+            <!-- Modal button -->
+            <a
+              type="button"
+              class="button__interactive"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Launch demo modal <i class="fa-solid fa-caret-right"></i>
+            </a>
+
             <h3 class="product__price__text">Price: $$$$$$$$</h3>
           </article>
+
+          <!-- Shop contact info -->
+
           <article class="shop__info">
             <h4 class="shop__suport">Contact Our Technical Support</h4>
             <p class="shop__paragraph__info">
@@ -98,6 +114,35 @@
               we're here to make your life easier!
             </p>
           </article>
+
+          <!-- Modal Product -->
+
+          <aside
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <section class="modal-dialog">
+              <div class="modal-content">
+                <article class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </article>
+                <article class="modal-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  libero debitis quaerat quam nobis esse voluptatum
+                  consequuntur, dignissimos veritatis numquam, suscipit magnam
+                  molestias ea similique, nulla itaque modi omnis? Culpa.
+                </article>
+              </div>
+            </section>
+          </aside>
         </div>
 
         <div class="contact__mail form" aria-label="contact form">

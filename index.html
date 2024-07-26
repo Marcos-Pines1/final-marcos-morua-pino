@@ -549,6 +549,35 @@
 
   <script src="js/swiper-bundle.min.js"></script>
 
+  <!-- Swipper script -->
+
+  <script>
+    /* Swipper */
+
+    let swiperFavorite = new Swiper(".other__swiper", {
+      loop: true,
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 20,
+      grabCursor: true,
+
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+
   <!-- Script -->
 
   <script src="js/app.js"></script>
